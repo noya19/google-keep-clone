@@ -1,0 +1,100 @@
+.drawer{
+    position: fixed;
+    top: 4rem;
+    width: 280px;  
+    height: calc(100% - 64px); 
+    border: 1px solid black;
+
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
+
+.toggledrawer{
+    width: 80px;
+    overflow: hidden;
+}
+
+.drawer_actions{
+    flex: 1;
+}
+
+.drawer_actions > div{
+    /* border: 1px solid black; */
+    height: 3rem;
+    display: flex;
+    align-items: center;
+
+    padding-left: 12px;
+}
+
+/*add_radius class represents the drawer_actions div*/
+.add_radius > div{
+    border-top-right-radius: 22px;
+    border-bottom-right-radius: 22px;
+}
+
+.add_radius > div:hover{
+    background-color: var(--navHover);
+}
+
+.drawer_actions > div > div{
+    /* border: 1px solid blueviolet; */
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.icon_wrapper:hover{
+    background-color: var(--navHover);
+}
+
+.active{
+    background-color: #feefc3
+}
+
+
+.drawer_actions div svg{
+    width: 56px;
+    padding: 0px 12px;
+    opacity: 0.6;
+    flex-shrink: 0;
+}
+
+.drawer_actions div span{
+    margin-left: 20px;
+    font-size: 0.875rem;
+    font-weight: 450;
+    color: #202124;
+    flex-shrink: 0;
+}
+
+/*when hover on action target the svg*/
+.drawer_actions div:hover svg{
+    opacity: 1;
+}
+
+/* CSS on the info*/
+.info{
+    margin: 30px 0 10px 0;
+    padding: 8px 0px 1px 24px;
+    font-size: 12px;
+}
+
+.info a{
+    text-decoration: none;
+    color: black;
+    opacity: 0.8;
+}
+
+.info a:hover{
+    opacity: 1;
+}
+
+.hideInfo{
+    display: none;
+}
+

@@ -1,0 +1,46 @@
+.container{
+    /* border: 1px solid black; */
+
+    display: flex;
+    align-items: center;
+    min-width: 14.5rem;
+    padding-right: 30px;
+}
+
+.container a{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.container a img{
+    margin-bottom: 4px;
+    padding-right: 4px;
+    height: max-content;
+    width: 44px;
+}
+
+.container span{
+    font-size: 22px;
+    color: #5f6368;
+    font-weight: 400;
+}
+
+.burger{
+    width: 3.1rem;
+    height: 3.1rem;
+    margin: 0 4px;
+    padding: 12px;
+    border-radius: 50%;
+    color: #5f6368;
+    /* border: 1px solid black; */
+}
+
+.burger :focus, .burger:hover{
+    background: rgba(60,64,67,.1)
+}
+
+.burger svg{
+    color: #5f6368;
+}
+

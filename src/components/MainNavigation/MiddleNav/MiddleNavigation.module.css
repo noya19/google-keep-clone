@@ -1,0 +1,93 @@
+.container{
+    /* border: 1px solid blue; */
+    flex: 1;
+
+    display: flex;
+}
+
+.searchWrapper{
+    padding: 0px 30px 0px 10px;
+    flex: 1;
+}
+
+.search{
+    /* border: 1px solid black; */
+    height: 100%;
+    max-width: 45rem;
+
+
+    display: flex;
+    align-items: center;
+    
+    /* border: 1px solid black; */
+    border-radius: 8px;
+    padding: 0px 10px;
+
+    background-color: rgba(240, 240, 240, 0.932);
+}
+
+.search:focus-within{
+    background-color: white;
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.3);
+}
+
+.search input{
+    height: 2rem;
+    width: 100%;
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 1rem;
+    padding-left: 0.5rem;
+    font-weight: 100;
+}
+
+.search .searchLogo{
+    height: 2.5rem;
+    width: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 4px;
+    border-radius: 50%;
+}
+
+.search button{
+    width: 3rem;
+    height: 2.5rem;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+
+.search button:hover{
+    background-color: var(--navHover);
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+.options{
+    display: flex;
+}
+
+.options div{
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    opacity: 0.5;
+}
+
+.options div:hover{
+    background-color: var(--navHover);
+    opacity: 1;
+    
+}
